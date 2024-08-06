@@ -1,0 +1,7 @@
+@use 'vuetify/settings' with (
+  $divider-opacity: 1,
+  $layers: true,
+  $reset: true,
+  $snackbar-plain-opacity: 1,
+  $utilities: false,
+);

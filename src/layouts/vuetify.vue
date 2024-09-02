@@ -2,7 +2,7 @@
 import { breakpointsVuetifyV3, useBreakpoints } from '@vueuse/core'
 import { VApp, VAppBar, VBtn, VFooter, VList, VListItem, VMain, VNavigationDrawer, VSpacer, VSpeedDial, VSystemBar } from 'vuetify/components'
 
-import { PageVuetifySnackbar } from '#components'
+import { PagesVuetifySnackbar } from '#components'
 
 const { snackbar } = useAppState()
 const { greaterOrEqual, isGreaterOrEqual } = useBreakpoints(breakpointsVuetifyV3)
@@ -144,7 +144,7 @@ function toggleMenu() {
     </div>
   </VMain>
 
-  <PageVuetifySnackbar
+  <PagesVuetifySnackbar
     v-bind="snackbar"
     v-model="snackbar.show"
   />

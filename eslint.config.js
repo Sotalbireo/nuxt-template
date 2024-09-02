@@ -14,6 +14,7 @@ import withNuxt from './.nuxt/eslint.config.mjs'
 export default withNuxt(
   {
     ignores: [
+      '**/.husky/**',
       '**/public/**',
       '**/tests/result/**',
     ],
@@ -30,6 +31,10 @@ export default withNuxt(
       'simple-import-sort': simpleImportSort,
     },
     rules: {
+      'import/first': 'error',
+      'import/newline-after-import': 'error',
+      'import/no-duplicates': 'error',
+      'import/order': 'off',
       'simple-import-sort/exports': 'error',
       'simple-import-sort/imports': 'error',
     },

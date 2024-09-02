@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { breakpointsVuetifyV3, useBreakpoints } from '@vueuse/core'
 
-import { PartVuetifyModal } from '#components'
+import { PartsVuetifyModal } from '#components'
 
 definePageMeta({
   layout: 'vuetify',
@@ -42,7 +42,7 @@ function openSnackbar() {
   </button>
 </div>
 
-<PartVuetifyModal
+<PartsVuetifyModal
   v-model="modal"
   :actions="[
     { click: () => modal = false, label: 'OK' },
@@ -52,5 +52,5 @@ function openSnackbar() {
   title="モーダル"
 >
   test
-</PartVuetifyModal>
+</PartsVuetifyModal>
 </template>
